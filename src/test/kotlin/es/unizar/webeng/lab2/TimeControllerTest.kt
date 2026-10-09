@@ -10,6 +10,7 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 
+/** Verifies that GET /time returns 200 with a JSON time field. */
 @SpringBootTest
 @AutoConfigureMockMvc
 class TimeControllerTest {

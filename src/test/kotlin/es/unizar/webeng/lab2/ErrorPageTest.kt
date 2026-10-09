@@ -15,6 +15,10 @@ import org.springframework.http.HttpMethod
 import org.springframework.http.HttpStatus
 import org.springframework.http.MediaType
 
+/**
+ * Verifies that an unknown path requested with Accept: text/html renders
+ * the custom error page (404 + status + path) using a real server.
+ */
 @SpringBootTest(
     webEnvironment = WebEnvironment.RANDOM_PORT,
 )
